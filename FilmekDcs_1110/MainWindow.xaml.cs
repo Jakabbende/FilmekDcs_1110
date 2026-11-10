@@ -94,7 +94,10 @@ namespace FilmekDcs_1110
             prgbar.Maximum = filmek.Max(f => f.Hossz);
             prgbar.Minimum = 0;
             Film selectedd = ((Film)datagrid.SelectedItem);
-            prgbar.Value = selectedd.Hossz;
+            if(selectedd != null)
+            {
+                prgbar.Value = selectedd.Hossz;
+            }
         }
     }
 }
