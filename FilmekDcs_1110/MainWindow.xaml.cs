@@ -62,5 +62,11 @@ namespace FilmekDcs_1110
             datagrid.ItemsSource = leghoszabbf;
             datagrid.Items.Refresh();
         }
+
+        private void atlagertekeles(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Hossz)}");
+        }
+
     }
 }
