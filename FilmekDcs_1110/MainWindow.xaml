@@ -14,7 +14,7 @@
         
         <StackPanel Orientation="Vertical" Grid.Column="0">
             <Button Width="200" Margin="5" Content="Filmek betölrése" Click="filmekbetoltese"/>
-            <Button Width="200" Margin="5" Content="Hány film van?"/>
+            <Button Width="200" Margin="5" Content="Hány film van?" Click="hanyfilmvan"/>
             <Button Width="200" Margin="5" Content="Leghoszabb film?"/>
             <Button Width="200" Margin="5" Content="Átlag értékelés" />
             <Button Width="200" Margin="5" Content="Csak Sci-fi"/>

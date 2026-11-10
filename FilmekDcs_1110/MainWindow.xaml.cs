@@ -51,5 +51,9 @@ namespace FilmekDcs_1110
             datagrid.Items.Refresh();
         }
 
+        private void hanyfilmvan(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Összesen {filmek.Count()}db film van");
+        }
     }
 }
