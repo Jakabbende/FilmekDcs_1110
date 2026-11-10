@@ -55,5 +55,12 @@ namespace FilmekDcs_1110
         {
             MessageBox.Show($"Összesen {filmek.Count()}db film van");
         }
+
+        private void leghoszabbfilm(object sender, RoutedEventArgs e)
+        {
+            var leghoszabbf = filmek.OrderByDescending(f => f.Hossz).Take(1);
+            datagrid.ItemsSource = leghoszabbf;
+            datagrid.Items.Refresh();
+        }
     }
 }
