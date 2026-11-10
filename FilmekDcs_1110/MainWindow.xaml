@@ -19,7 +19,7 @@
             <Button Width="200" Margin="5" Content="Átlag értékelés" Click="atlagertekeles" />
             <Button Width="200" Margin="5" Content="Csak Sci-fi" Click="csakscifi"/>
             <Button Width="200" Margin="5" Content="Csak címek" Click="csakcimek" />
-            <Button Width="200" Margin="5" Content="Renezés cím szerint" />
+            <Button Width="200" Margin="5" Content="Renezés cím szerint" Click="rendezescimszerint" />
             <ProgressBar Width="200" Height="18" Margin="0,20,0,0" x:Name="prgbar"/>
         </StackPanel>
 

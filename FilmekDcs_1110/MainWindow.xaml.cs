@@ -81,5 +81,12 @@ namespace FilmekDcs_1110
             datagrid.ItemsSource = csakcimek;
             datagrid.Items.Refresh();
         }
+
+        private void rendezescimszerint(object sender, RoutedEventArgs e)
+        {
+            var cimszerint = filmek.OrderBy(f => f.Cim).ToList();
+            datagrid.ItemsSource= cimszerint;
+            datagrid.Items.Refresh();
+        }
     }
 }
