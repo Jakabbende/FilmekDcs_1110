@@ -74,5 +74,12 @@ namespace FilmekDcs_1110
             datagrid.ItemsSource = csaksc;
             datagrid.Items.Refresh();
         }
+
+        private void csakcimek(object sender, RoutedEventArgs e)
+        {
+            var csakcimek = filmek.Select(f => new { Cím = f.Cim }).ToList();
+            datagrid.ItemsSource = csakcimek;
+            datagrid.Items.Refresh();
+        }
     }
 }
