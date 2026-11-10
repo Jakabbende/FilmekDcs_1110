@@ -24,7 +24,7 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1">
-            <DataGrid x:Name="datagrid" IsReadOnly="True" MaxHeight="200"/>
+            <DataGrid x:Name="datagrid" IsReadOnly="True" MaxHeight="200" SelectionChanged="selectchange"/>
         </StackPanel>
     </Grid>
 </Window>

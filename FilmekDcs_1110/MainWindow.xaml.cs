@@ -88,5 +88,13 @@ namespace FilmekDcs_1110
             datagrid.ItemsSource= cimszerint;
             datagrid.Items.Refresh();
         }
+
+        private void selectchange(object sender, SelectionChangedEventArgs e)
+        {
+            prgbar.Maximum = filmek.Max(f => f.Hossz);
+            prgbar.Minimum = 0;
+            Film selectedd = ((Film)datagrid.SelectedItem);
+            prgbar.Value = selectedd.Hossz;
+        }
     }
 }
