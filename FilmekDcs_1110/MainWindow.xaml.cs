@@ -31,12 +31,7 @@ namespace FilmekDcs_1110
             public int Hossz { get; set; }
             public double Ertekeles { get; set; }
         }
-
-        public MainWindow()
-        {
-            InitializeComponent();
-
-            List<Film> filmek = new List<Film>()
+        public List<Film> filmek = new List<Film>()
             {
                 new Film("Csillagok háborúja", "sci-fi", 121, 8.6),
                 new Film("Titanic", "dráma", 195, 7.8),
@@ -44,6 +39,17 @@ namespace FilmekDcs_1110
                 new Film("Mátrix", "sci-fi", 136, 8.7),
                 new Film("Shrek", "animáció", 90, 7.9)
             };
+        public MainWindow()
+        {
+            InitializeComponent();
+
         }
+
+        private void filmekbetoltese(object sender, RoutedEventArgs e)
+        {
+            datagrid.ItemsSource = filmek;
+            datagrid.Items.Refresh();
+        }
+
     }
 }

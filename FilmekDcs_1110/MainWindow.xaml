@@ -13,18 +13,18 @@
         </Grid.ColumnDefinitions>
         
         <StackPanel Orientation="Vertical" Grid.Column="0">
-            <Button Width="200" Margin="5" Content="Filmek betölrése" Click=""/>
-            <Button Width="200" Margin="5" Content="Hány film van?" Click=""/>
-            <Button Width="200" Margin="5" Content="Leghoszabb film?" Click=""/>
-            <Button Width="200" Margin="5" Content="Átlag értékelés" Click=""/>
-            <Button Width="200" Margin="5" Content="Csak Sci-fi" Click=""/>
-            <Button Width="200" Margin="5" Content="Csak címek" Click=""/>
-            <Button Width="200" Margin="5" Content="Renezés cím szerint" Click=""/>
+            <Button Width="200" Margin="5" Content="Filmek betölrése" Click="filmekbetoltese"/>
+            <Button Width="200" Margin="5" Content="Hány film van?"/>
+            <Button Width="200" Margin="5" Content="Leghoszabb film?"/>
+            <Button Width="200" Margin="5" Content="Átlag értékelés" />
+            <Button Width="200" Margin="5" Content="Csak Sci-fi"/>
+            <Button Width="200" Margin="5" Content="Csak címek" />
+            <Button Width="200" Margin="5" Content="Renezés cím szerint" />
             <ProgressBar Width="200" Height="18" Margin="0,20,0,0" x:Name="prgbar"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1">
-            <DataGrid x:Name="datagrid" IsReadOnly="True" SelectionChanged="selected" MaxHeight="200"/>
+            <DataGrid x:Name="datagrid" IsReadOnly="True" MaxHeight="200"/>
         </StackPanel>
     </Grid>
 </Window>
