@@ -65,7 +65,7 @@ namespace FilmekDcs_1110
 
         private void atlagertekeles(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Hossz)}");
+            MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Ertekeles)}");
         }
 
         private void csakscifi(object sender, RoutedEventArgs e)
