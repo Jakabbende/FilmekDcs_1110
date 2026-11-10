@@ -68,5 +68,11 @@ namespace FilmekDcs_1110
             MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Hossz)}");
         }
 
+        private void csakscifi(object sender, RoutedEventArgs e)
+        {
+            var csaksc = filmek.Where(f => f.Mufaj.ToLower() == "sci-fi").ToList();
+            datagrid.ItemsSource = csaksc;
+            datagrid.Items.Refresh();
+        }
     }
 }

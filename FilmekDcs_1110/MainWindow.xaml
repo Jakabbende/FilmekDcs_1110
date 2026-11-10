@@ -17,7 +17,7 @@
             <Button Width="200" Margin="5" Content="Hány film van?" Click="hanyfilmvan"/>
             <Button Width="200" Margin="5" Content="Leghoszabb film?" Click="leghoszabbfilm"/>
             <Button Width="200" Margin="5" Content="Átlag értékelés" Click="atlagertekeles" />
-            <Button Width="200" Margin="5" Content="Csak Sci-fi"/>
+            <Button Width="200" Margin="5" Content="Csak Sci-fi" Click="csakscifi"/>
             <Button Width="200" Margin="5" Content="Csak címek" />
             <Button Width="200" Margin="5" Content="Renezés cím szerint" />
             <ProgressBar Width="200" Height="18" Margin="0,20,0,0" x:Name="prgbar"/>
